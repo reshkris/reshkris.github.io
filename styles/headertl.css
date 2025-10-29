@@ -1,0 +1,92 @@
+.header{
+  width: 899px;
+  height: 72px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  left: 50%;
+  transform: translateX(-50%);
+
+  top: 31px;
+  z-index: 100;
+
+  background-color: rgb(250, 249, 245);
+  border-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: rgba(112, 124, 127, 0.028);
+  border-radius: 6px;
+  position: fixed;
+
+}
+
+.left-section{
+  margin-left: 31px;
+  cursor: pointer;
+  align-items: center;
+}
+
+.middle-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  font-size: 18px;
+  font-weight: 100;
+  color: rgb(46, 45, 41);
+  margin-left: 59px;
+  margin-right: 59px;
+  cursor: pointer;
+}
+
+.right-section{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  margin-right: 31px;
+  width: 140px;
+  cursor: pointer;
+
+}
+
+.hero-section{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  height: 714px;
+  
+}
+
+.main-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.295);
+}
+
+.main-heading{
+  position: relative;
+  font-size: 64px;
+  font-weight: 500;
+  color: white;
+  margin-top: -200px;
+}
+
+@media (max-width: 768px) {
+  .main-heading {
+    width: 350px;
+  }
+}
