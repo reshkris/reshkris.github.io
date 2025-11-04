@@ -1,0 +1,116 @@
+.tea-collections {
+  display: grid;
+}
+
+.product-grid-2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+  justify-items: auto;
+  gap: 30px;
+  margin-top: 23px;
+}
+
+.product-card-2 {
+  width: 325px;
+  box-sizing: border-box;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card-2:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  cursor: pointer;
+}
+.product-image-2{
+  width: 325px;
+  height: 336px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+  
+
+.title4 {
+  font-size: 28px;
+  font-weight: 350;
+  margin-top: 42px;
+  color: rgb(46, 45, 41);
+  margin-bottom: 0;
+}
+
+.product-info-2 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-left: 5px;
+}
+
+.product-name-2 {
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(46, 45, 41);
+}
+
+.description {
+  font-size: 12px;
+  font-weight: 200;
+  color: rgb(90, 90, 90);
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-right: 10px;
+}
+
+.price-2{
+  font-size: 18px;
+  font-weight: 500;
+  color: rgb(46, 45, 41);
+}
+
+.center-btn-2{
+  text-align: center;
+}
+
+.green-button-2{
+  font-size: 16px;
+  font-weight: 500;
+  color: rgb(246, 244, 236);
+  background-color: rgb(58, 85, 41);
+  border: none;
+  border-radius: 11px;
+  padding: 15px 32px;
+  margin-top: 48px;
+  cursor: pointer;
+  transition: background-color 0.15s;
+}
+
+.green-button-2:hover {
+  background-color: rgb(47, 66, 37);
+}
+
+@media (max-width: 576px) {
+  .product-grid-2{
+  gap: 16px;
+  }
+
+  .product-image-2{
+  width: 300px;
+  height: 270px;
+  }
+
+  .title4{
+  font-size: 24px;
+  margin-top: 32px;
+  }
+
+  .product-name-2{
+  font-size: 18px;
+  }
+
+  .price-2{
+  font-size: 16px;
+  }
+
+  .green-button-2{
+  margin-top: 15px;
+  }
+}
